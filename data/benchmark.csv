@@ -1,0 +1,10 @@
+source,system,components,logs,templates,entries,confidence
+LogHub,Hadoop,19,68,41,3575,0.999999997
+LogHub,HDFS,8,1000,16,18741,0.954800911
+LogHub,Linux,31,42,115,11259,0.781844212
+LogHub,Spark,11,217,21,67725,0.984861254
+LogHub,Zookeeper,18,36,40,25298,0.910055791
+console,CoreSync,54,1418,204,30223,0.942047018
+console,NGLClient,27,42,70,892,0.888468137
+console,Oobelib,12,250,147,56557,0.889014845
+console,PDApp,10,787,75,47394,0.873280811
