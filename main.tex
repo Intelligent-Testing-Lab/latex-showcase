@@ -63,6 +63,9 @@
 }
 \lstset{style=mystyle}
 
+% color box
+\usepackage{tcolorbox}
+
 % etc
 \usepackage[margin=3cm]{geometry}
 \usepackage{setspace}
@@ -70,9 +73,9 @@
 \setlength{\parindent}{0pt}  % no paragraph indentation (not recommended in general)
 \setlength{\parskip}{6pt}    % space between paragraphs
 
-\title{Latex Showcase (Work In Progress)}
+\title{Latex Showcase (Evolving Document)}
 \author{Donghwan Shin}
-\date{November 2023}
+\date{\today}
 
 \begin{document}
 
@@ -257,6 +260,13 @@ a log parsing approach can be represented as an abstraction function $\tau \colo
 See \cite{rv2021} for more examples (and how to write a theoretical paper). 
 
 
+\section{Coloured Box}
+
+We often need to highlight some text in a coloured box, especially when we want to provide a compact summary of an evaluation result. The following shows how to do it.
+
+\begin{tcolorbox}
+    The answer to RQ1 is that ...
+\end{tcolorbox}
 
 \bibliographystyle{IEEEtranN} 
 \bibliography{references} 
