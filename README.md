@@ -1,4 +1,4 @@
-# Latex Showcase
+# Latex Showcase (Public)
 
 This repository includes some useful latex environments and their examples. 
 Currently, we have examples for the following items:
