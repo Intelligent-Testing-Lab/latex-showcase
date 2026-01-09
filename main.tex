@@ -66,6 +66,9 @@
 % color box
 \usepackage{tcolorbox}
 
+% subfigures
+\usepackage{subcaption}
+
 % etc
 \usepackage[margin=3cm]{geometry}
 \usepackage{setspace}
@@ -133,6 +136,49 @@ Figure~\ref{fig:parallel-boxplot} shows an example figure using centering.
     \label{fig:parallel-boxplot}
 \end{figure}
 
+Figure~\ref{fig:sub-figures} shows an example figure using sub-figures side-by-side.
+
+\begin{figure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  % include first image
+  \includegraphics[width=.9\linewidth]{figures/rq1-boxplot.pdf}  
+  \caption{Caption for first sub-figure}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  % include second image
+  \includegraphics[width=.9\linewidth]{figures/rq1-boxplot.pdf}  
+  \caption{Caption for second sub-figure}
+  \label{fig:sub-second}
+\end{subfigure}
+\caption{Caption for the whole figure with sub-figures}
+\label{fig:sub-figures}
+\end{figure}
+
+Figure~\ref{fig:sub-figures-newline} shows another example figure using sub-figures arranged in two rows.
+
+\begin{figure}
+% \centering
+\begin{subfigure}{\textwidth}
+    \centering
+    % include first image
+    \includegraphics[width=.7\linewidth]{figures/rq1-boxplot.pdf}  
+    \caption{Caption for first sub-figure}
+    \label{fig:sub2-first}
+\end{subfigure}
+\newline
+\begin{subfigure}{\textwidth}
+    \centering
+    % include second image
+    \includegraphics[width=.7\linewidth]{figures/rq1-boxplot.pdf}
+    \caption{Caption for second sub-figure}
+    \label{fig:sub2-second}
+\end{subfigure}
+\caption{Caption for the whole figure with sub-figures arranged in two rows}
+\label{fig:sub-figures-newline}
+\end{figure}
 
 \section{Tables}
 
